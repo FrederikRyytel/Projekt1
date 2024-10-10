@@ -20,6 +20,8 @@ p {
 t {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke-width: thin;
+    -webkit-text-stroke-color: black;
 }
 
 .container {
@@ -31,4 +33,6 @@ t {
 a {
     color: lightgray;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke-width: thin;
+    -webkit-text-stroke-color: black;
 }

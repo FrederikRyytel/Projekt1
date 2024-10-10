@@ -4,14 +4,16 @@ async function fetchMessages() {
     const response = await fetch(url);
     const json = await response.json();
 
-    const element = document.querySelector(".messages");
-    element.innerHTML = "";
-    for (const item of json) {
-     const phrase = item.phrase;
-     const author = item.author;
+    const element = document.querySelector(".container");
+    element.innerHTML = ""; 
 
-    element.innerHTML = "<p>" + phrase + ": " + author + "</p>";
+    for (const item of json) {
+        const phrase = item.phrase;
+        const author = item.author;
+
+    element.innerHTML += "<t>" + phrase + "</t>" + "<a>" + author + "</a>" + "<br />";
   }
+  
 }
 
 fetchMessages()
